@@ -145,3 +145,27 @@ variable "drone_webhook_skip_verify" {
   type        = bool
   default     = false
 }
+
+variable "drone_s3_access_key" {
+  description = "Drone S3"
+  type        = string
+  default     = ""
+}
+
+variable "drone_s3_secret_key" {
+  description = "Drone S3"
+  type        = string
+  default     = ""
+}
+
+variable "drone_s3_default_region" {
+  description = "Drone S3"
+  type        = string
+  default     = "us-east-1"
+}
+
+variable "drone_s3_region" {
+  description = "Drone S3"
+  type        = string
+  default     = "us-east-1"
+}

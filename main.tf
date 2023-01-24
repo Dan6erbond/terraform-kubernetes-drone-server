@@ -175,6 +175,10 @@ resource "kubernetes_config_map" "drone_server" {
     DRONE_S3_ENDPOINT         = var.drone_s3_endpoint
     DRONE_S3_PATH_STYLE       = var.drone_s3_path_style
     DRONE_S3_PREFIX           = var.drone_s3_prefix
+    AWS_ACCESS_KEY_ID         = var.drone_s3_access_key
+    AWS_SECRET_ACCESS_KEY     = var.drone_s3_secret_key
+    AWS_DEFAULT_REGION        = var.drone_s3_default_region
+    AWS_REGION                = var.drone_s3_region
     DRONE_STARLARK_ENABLED    = var.drone_starlark_enabled
     DRONE_WEBHOOK_ENDPOINT    = var.drone_webhook_endpoint
     DRONE_WEBHOOK_EVENTS      = var.drone_webhook_events
