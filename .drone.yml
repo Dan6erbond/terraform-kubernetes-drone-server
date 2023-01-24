@@ -11,6 +11,7 @@ steps:
       - git config --global url."https://$GIT_USERNAME:$GIT_TOKEN@gitea.ravianand.me/".insteadOf "https://gitea.ravianand.me/"
       - npm i -g standard-version
       - standard-version
+      - git push --follow-tags origin
 
 trigger:
   branch:
