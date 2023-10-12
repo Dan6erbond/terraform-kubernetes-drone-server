@@ -14,9 +14,10 @@ steps:
       - git config --global user.email "moravrav@gmail.com"
       - git config --global user.name "RaviAnand Mohabir"
       - git config --global url."https://$GIT_USERNAME:$GIT_TOKEN@gitea.ravianand.me/".insteadOf "https://gitea.ravianand.me/"
+      - git fetch --tags
       - npm i -g standard-version
-      - standard-version
-      - git push --follow-tags --set-upstream origin main
+      - 'standard-version --releaseCommitMessageFormat "chore(release): {{currentTag}} [CI SKIP]"'
+      - git push --follow-tags origin main
 
 trigger:
   branch:
