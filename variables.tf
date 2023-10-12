@@ -169,3 +169,9 @@ variable "drone_s3_region" {
   type        = string
   default     = "us-east-1"
 }
+
+variable "image_pull_policy" {
+  description = "Image pull policy for Drone server image"
+  type        = string
+  default     = "IfNotPresent"
+}

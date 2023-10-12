@@ -49,8 +49,9 @@ resource "kubernetes_deployment" "drone_server" {
       spec {
         service_account_name = kubernetes_service_account.drone_server.metadata.0.name
         container {
-          image = var.image_registry == "" ? "${var.image_repository}:${var.image_tag}" : "${var.image_registry}/${var.image_repository}:${var.image_tag}"
-          name  = "drone"
+          image             = var.image_registry == "" ? "${var.image_repository}:${var.image_tag}" : "${var.image_registry}/${var.image_repository}:${var.image_tag}"
+          image_pull_policy = var.image_pull_policy
+          name              = "drone"
           env_from {
             config_map_ref {
               name = kubernetes_config_map.drone_server.metadata.0.name
