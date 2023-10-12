@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://gitea.ravianand.me/Dan6erbond/terraform-kubernetes-drone-server/compare/v1.1.0...v1.2.0) (2023-10-12)
+
+
+### Features
+
+* :sparkles: add image pull policy variable ([3b9fb59](https://gitea.ravianand.me/Dan6erbond/terraform-kubernetes-drone-server/commit/3b9fb59f8cb30e481977229ce117aa5bdb8fe3a2))
+
 ## 1.1.0 (2023-10-12)
 
 
