@@ -185,5 +185,6 @@ resource "kubernetes_config_map" "drone_server" {
     DRONE_WEBHOOK_EVENTS      = var.drone_webhook_events
     DRONE_WEBHOOK_SECRET      = var.drone_webhook_secret
     DRONE_WEBHOOK_SKIP_VERIFY = var.drone_webhook_skip_verify
+    DRONE_JSONNET_ENABLED     = var.drone_jsonnet_enabled
   }
 }

@@ -170,6 +170,12 @@ variable "drone_s3_region" {
   default     = "us-east-1"
 }
 
+variable "drone_jsonnet_enabled" {
+  description = "Drone JSONNet enabled"
+  type        = bool
+  default     = true
+}
+
 variable "image_pull_policy" {
   description = "Image pull policy for Drone server image"
   type        = string
